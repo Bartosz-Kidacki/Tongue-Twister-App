@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/agedpaper"
+                android:orientation="vertical"
+
+                tools:context="com.pixeldreamland.tonguetwister.MainActivity">
+    <ImageButton
+            android:id="@+id/prev123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_arrow_back_black_36dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="10dp"/>
+
+    <ImageButton
+            android:id="@+id/textToSpeechButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_play_arrow_black_36dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="10dp"/>
+
+    <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/prev123"
+            android:fillViewport="true">
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="20px"
+                android:textSize="26dp"
+                android:typeface="serif"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+
+            android:id="@+id/imageNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_arrow_forward_black_36dp"
+            android:padding="10dp"
+            android:background="?android:selectableItemBackground"/>
+</RelativeLayout>
